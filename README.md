@@ -70,7 +70,7 @@ This dashboard is ideal for management teams looking to make data-driven decisio
   <img src="https://github.com/user-attachments/assets/841ba270-6406-4de9-8a47-2489ba776a62" width="700">
 </p>
 <p align="center">
-  <em>Dashborad depicting performance of Evan brands from Jan-Jun 2020</em><br>
+  <em>Dashboard depicting performance of Evan brands from Jan-Jun 2020</em><br>
 </p>
 
 
