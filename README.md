@@ -1,7 +1,7 @@
 # Sipp-Beverages-Financial-Analysis-Dashboard
 
 <p align="centre">
-  <img src="https://github.com/user-attachments/assets/7300c650-c92b-4915-a0a2-51f3ed0b96ef" width="300" alt="Dashborad showing performance from Jul 2019 - Jun 2020">
+  <img src="https://github.com/user-attachments/assets/7300c650-c92b-4915-a0a2-51f3ed0b96ef" width="640" alt="Dashborad showing performance from Jul 2019 - Jun 2020">
 </p>
 
 ## Project Overview
@@ -18,21 +18,21 @@ The data for this project comes from a CSV file containing financial information
 The dashboard was built using Tableau, with each chart and KPI created in separate worksheets before being integrated into a unified dashboard. Interactive filters were added to enhance the analytical capabilities of the dashboard.
 
 ### Steps in the Process:
-  #### 1.	Data Connection and Preparation:
-    * Loaded the CSV dataset into Tableau.
-    * Reviewed the dataset structure, identifying it as time series data with financial metrics and client categorizations.
-  #### 2.	Creation of KPIs:
-    * Developed four key performance indicators (KPIs) to provide an overview of the company’s financial health.
-  #### 3.	Chart Development:
-    * Net Sales and GP % (Combo Chart): This chart combines a bar chart of monthly net sales with a line chart of gross profit margins, offering insights into both revenue growth and profitability.
-    * Volume by Size (Horizontal Bar Chart): Displays the volume of purchases by bottle size, facilitating comparison between different product packages.
-    * Volume by Client Type (Horizontal Bar Chart): Highlights purchase volumes across client types such as Big-box, Discounters, Grocery, and Supermarkets.
-  #### 4.	Dashboard Integration:
-    * Integrated the KPIs and charts into a cohesive dashboard.
-    * Applied a custom color palette to match Sipp Beverages' corporate branding.
-  #### 5.	Interactive Filters:
-    * Brand Filter: Allows for analysis at the brand level, providing insights into individual brand performance.
-    * Date Filter: Facilitates time-based analysis, enabling users to examine trends over specific periods, such as months, quarters, or years.
+#### 1.	Data Connection and Preparation:
+* Loaded the CSV dataset into Tableau.
+* Reviewed the dataset structure, identifying it as time series data with financial metrics and client categorizations.
+#### 2.	Creation of KPIs:
+* Developed four key performance indicators (KPIs) to provide an overview of the company’s financial health.
+#### 3.	Chart Development:
+* Net Sales and GP % (Combo Chart): This chart combines a bar chart of monthly net sales with a line chart of gross profit margins, offering insights into both revenue growth and profitability.
+* Volume by Size (Horizontal Bar Chart): Displays the volume of purchases by bottle size, facilitating comparison between different product packages.
+* Volume by Client Type (Horizontal Bar Chart): Highlights purchase volumes across client types such as Big-box, Discounters, Grocery, and Supermarkets.
+#### 4.	Dashboard Integration:
+* Integrated the KPIs and charts into a cohesive dashboard.
+* Applied a custom color palette to match Sipp Beverages' corporate branding.
+#### 5.	Interactive Filters:
+* Brand Filter: Allows for analysis at the brand level, providing insights into individual brand performance.
+* Date Filter: Facilitates time-based analysis, enabling users to examine trends over specific periods, such as months, quarters, or years.
 
 ## How to Interpret the Dashboard
 The dashboard serves as a powerful tool for tracking different aspects of Sipp Beverages’ performance. The combination of KPIs and charts provides a holistic view of the company’s financial health, allowing users to:
@@ -45,17 +45,17 @@ The dashboard serves as a powerful tool for tracking different aspects of Sipp B
 This dashboard is ideal for management teams looking to make data-driven decisions. For instance:
 * Yearly Performance Review: Adjust the start and end dates to generate a report on the company’s performance over the last 12 months.
 <p align="centre">
-  <img src="https://github.com/user-attachments/assets/0b046e4d-4f0c-4259-88a3-f3c855198550" width="300" alt="Dashboard showing performance from Jan-Dec 2020">
+  <img src="https://github.com/user-attachments/assets/0b046e4d-4f0c-4259-88a3-f3c855198550" width="540" alt="Dashboard showing performance from Jan-Dec 2020">
 </p>
 
 * Quarterly Analysis: Narrow the time frame to a specific quarter, such as Q1-2020, to determine if sales quotas were met.
 <p align="centre">
-  <img src="https://github.com/user-attachments/assets/08b5cbef-09bf-46f9-8ecd-dc46365cde9d" width="300" alt="Dashboard displaying performance in Q1-2020">
+  <img src="https://github.com/user-attachments/assets/08b5cbef-09bf-46f9-8ecd-dc46365cde9d" width="540" alt="Dashboard displaying performance in Q1-2020">
 </p>
 
 * Brand-Specific Insights: Use the brand filter to focus on a specific brand or group, and track its development.
 <p align="centre">
-  <img src="https://github.com/user-attachments/assets/841ba270-6406-4de9-8a47-2489ba776a62" width="300" alt="Dashborad depicting performance of Evan brands from Jan-Jun 2020">
+  <img src="https://github.com/user-attachments/assets/841ba270-6406-4de9-8a47-2489ba776a62" width="540" alt="Dashborad depicting performance of Evan brands from Jan-Jun 2020">
 </p>
 
 ## Conclusion
