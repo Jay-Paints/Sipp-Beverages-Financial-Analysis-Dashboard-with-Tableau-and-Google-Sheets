@@ -3,7 +3,7 @@
 <p align="center">
   <img src="https://github.com/user-attachments/assets/7300c650-c92b-4915-a0a2-51f3ed0b96ef" width="720">
 </p>
-<p align="center"
+<p align="center">
   <em>Dashborad showing performance from Jul 2019 - Jun 2020</em><br>
 </p>
 
@@ -50,7 +50,7 @@ This dashboard is ideal for management teams looking to make data-driven decisio
 <p align="center">
   <img src="https://github.com/user-attachments/assets/0b046e4d-4f0c-4259-88a3-f3c855198550" width="640">
 </p>
-<p align="center"
+<p align="center">
   <em>Dashboard showing performance from Jan-Dec 2020</em><br>
 </p>
 
@@ -58,7 +58,7 @@ This dashboard is ideal for management teams looking to make data-driven decisio
 <p align="center">
   <img src="https://github.com/user-attachments/assets/08b5cbef-09bf-46f9-8ecd-dc46365cde9d" width="640">
 </p>
-<p align="center"
+<p align="center">
   <em>Dashboard displaying performance in Q1-2020</em><br>
 </p>
 
@@ -66,12 +66,13 @@ This dashboard is ideal for management teams looking to make data-driven decisio
 <p align="center">
   <img src="https://github.com/user-attachments/assets/841ba270-6406-4de9-8a47-2489ba776a62" width="640">
 </p>
-<p align="center"
+<p align="center">
   <em>Dashborad depicting performance of Evan brands from Jan-Jun 2020</em><br>
 </p>
 
 ## Conclusion
 The Sipp Beverages Financial Analysis Dashboard is designed to provide clear, actionable insights into the company’s financial performance. Its interactive features and visual clarity make it a valuable tool for driving strategic decisions. As business goals evolve, this dashboard can be easily adapted to meet new needs, ensuring that Sipp Beverages remains competitive in the fast-paced FMCG industry.
+
 
 ***For a detailed description of the end-to-end process, please refer to the [PROCESS.md](./PROCESS.md) file.***
 
