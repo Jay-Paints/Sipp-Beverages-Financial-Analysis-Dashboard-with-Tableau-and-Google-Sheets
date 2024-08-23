@@ -1,7 +1,7 @@
 # Sipp-Beverages-Financial-Analysis-Dashboard
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/7300c650-c92b-4915-a0a2-51f3ed0b96ef" width="720">
+  <img src="https://github.com/user-attachments/assets/7300c650-c92b-4915-a0a2-51f3ed0b96ef" width="800">
 </p>
 <p align="center">
   <em>Dashborad showing performance from Jul 2019 - Jun 2020</em><br>
@@ -49,7 +49,7 @@ The dashboard serves as a powerful tool for tracking different aspects of Sipp B
 This dashboard is ideal for management teams looking to make data-driven decisions. For instance:
 * **Yearly Performance Review:** Adjust the start and end dates to generate a report on the company’s performance over the last 12 months.
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/0b046e4d-4f0c-4259-88a3-f3c855198550" width="640">
+  <img src="https://github.com/user-attachments/assets/0b046e4d-4f0c-4259-88a3-f3c855198550" width="700">
 </p>
 <p align="center">
   <em>Dashboard showing performance from Jan-Dec 2020</em><br>
@@ -58,7 +58,7 @@ This dashboard is ideal for management teams looking to make data-driven decisio
 
 * **Quarterly Analysis:** Narrow the time frame to a specific quarter, such as Q1-2020, to determine if sales quotas were met.
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/08b5cbef-09bf-46f9-8ecd-dc46365cde9d" width="640">
+  <img src="https://github.com/user-attachments/assets/08b5cbef-09bf-46f9-8ecd-dc46365cde9d" width="700">
 </p>
 <p align="center">
   <em>Dashboard displaying performance in Q1-2020</em><br>
@@ -67,7 +67,7 @@ This dashboard is ideal for management teams looking to make data-driven decisio
 
 * **Brand-Specific Insights:** Use the brand filter to focus on a specific brand or group, and track its development.
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/841ba270-6406-4de9-8a47-2489ba776a62" width="640">
+  <img src="https://github.com/user-attachments/assets/841ba270-6406-4de9-8a47-2489ba776a62" width="700">
 </p>
 <p align="center">
   <em>Dashborad depicting performance of Evan brands from Jan-Jun 2020</em><br>
