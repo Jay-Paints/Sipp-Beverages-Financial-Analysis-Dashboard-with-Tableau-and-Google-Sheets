@@ -4,7 +4,7 @@
   <img src="https://github.com/user-attachments/assets/7300c650-c92b-4915-a0a2-51f3ed0b96ef" width="800">
 </p>
 <p align="center">
-  <em>Dashborad showing performance from Jul 2019 - Jun 2020</em><br>
+  <em>Dashboard showing performance from Jul 2019 - Jun 2020</em><br>
 </p>
 
 
