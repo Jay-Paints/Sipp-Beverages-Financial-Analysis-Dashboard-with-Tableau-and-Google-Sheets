@@ -4,16 +4,16 @@
   <img src="https://github.com/user-attachments/assets/7300c650-c92b-4915-a0a2-51f3ed0b96ef" width="720">
 </p>
 <p align="center"
-  <em>Dashborad showing performance from Jul 2019 - Jun 2020</em>
+  <em>Dashborad showing performance from Jul 2019 - Jun 2020</em><br>
 </p>
 
 ## Project Overview
-The Sipp Beverages Financial Analysis Dashboard offers a comprehensive look at the performance of Sipp Beverages, a fictitious company operating in the Fast Moving Consumer Goods (FMCG) industry. This dashboard is designed to provide actionable insights into key financial metrics, enabling data-driven decision-making. Key features include visualizations of monthly net sales and gross profit, purchase volume by bottle size, and client type. The dashboard also incorporates interactive filters for dynamic analysis across different time periods and brands.
+The Sipp Beverages Financial Analysis Dashboard offers a comprehensive look at the performance of Sipp Beverages, a fictitious company operating in the Fast Moving Consumer Goods (FMCG) industry. This dashboard is designed to provide actionable insights into key financial metrics, enabling data-driven decision-making. Key features include visualizations of monthly net sales and gross profit, purchase volume by bottle size, and client type. The dashboard also incorporates interactive filters for dynamic analysis across different time periods and brands. Click on [Financial Analysis Dashboard](https://public.tableau.com/app/profile/justice.paintsil/viz/FinancialDashboard-SippBeveragesLtd_/SippReport#1) to interract with the dashboard on Tableau Public.
 
 ## Key Features
-* KPIs: Four critical metrics are displayed prominently at the top of the dashboard. These include Total Revenue, Average Discount %, Average Distribution Cost %, and COGS % of Gross Sales.
-* Interactive Filters: Users can filter data by time period and brand, allowing for focused analysis on specific metrics. These filters are integral for tracking the company’s progress and adapting strategies in real-time.
-* Visualizations: A combination chart displays monthly net sales and gross profit margin, while horizontal bar charts break down purchase volume by bottle size and client type.
+* **KPIs:** Four critical metrics are displayed prominently at the top of the dashboard. These include Total Revenue, Average Discount %, Average Distribution Cost %, and COGS % of Gross Sales.
+* **Interactive Filters:** Users can filter data by time period and brand, allowing for focused analysis on specific metrics. These filters are integral for tracking the company’s progress and adapting strategies in real-time.
+* **Visualizations:** A combination chart displays monthly net sales and gross profit margin, while horizontal bar charts break down purchase volume by bottle size and client type.
 
 ## Building the Dashboard
 The data for this project comes from a CSV file containing financial information typically extracted from ERP systems like SAP or Oracle. The dataset includes time series data, client details, and financials such as Volume, Gross Sales, Discounts, Net Sales, COGS, Distribution, and Warehousing costs.
@@ -51,7 +51,7 @@ This dashboard is ideal for management teams looking to make data-driven decisio
   <img src="https://github.com/user-attachments/assets/0b046e4d-4f0c-4259-88a3-f3c855198550" width="640">
 </p>
 <p align="center"
-  <em>Dashboard showing performance from Jan-Dec 2020</em>
+  <em>Dashboard showing performance from Jan-Dec 2020</em><br>
 </p>
 
 * Quarterly Analysis: Narrow the time frame to a specific quarter, such as Q1-2020, to determine if sales quotas were met.
@@ -59,7 +59,7 @@ This dashboard is ideal for management teams looking to make data-driven decisio
   <img src="https://github.com/user-attachments/assets/08b5cbef-09bf-46f9-8ecd-dc46365cde9d" width="640">
 </p>
 <p align="center"
-  <em>Dashboard displaying performance in Q1-2020</em>
+  <em>Dashboard displaying performance in Q1-2020</em><br>
 </p>
 
 * Brand-Specific Insights: Use the brand filter to focus on a specific brand or group, and track its development.
@@ -67,13 +67,13 @@ This dashboard is ideal for management teams looking to make data-driven decisio
   <img src="https://github.com/user-attachments/assets/841ba270-6406-4de9-8a47-2489ba776a62" width="640">
 </p>
 <p align="center"
-  <em>Dashborad depicting performance of Evan brands from Jan-Jun 2020</em>
+  <em>Dashborad depicting performance of Evan brands from Jan-Jun 2020</em><br>
 </p>
 
 ## Conclusion
 The Sipp Beverages Financial Analysis Dashboard is designed to provide clear, actionable insights into the company’s financial performance. Its interactive features and visual clarity make it a valuable tool for driving strategic decisions. As business goals evolve, this dashboard can be easily adapted to meet new needs, ensuring that Sipp Beverages remains competitive in the fast-paced FMCG industry.
 
-#### For a detailed description of the end-to-end process, please refer to the "[PROCESS.md](./PROCESS.md)" file.
+***For a detailed description of the end-to-end process, please refer to the [PROCESS.md](./PROCESS.md) file.***
 
 
 
