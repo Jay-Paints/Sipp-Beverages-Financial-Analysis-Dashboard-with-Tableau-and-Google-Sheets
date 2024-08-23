@@ -23,7 +23,7 @@ The dashboard was built using Tableau, with each chart and KPI created in separa
 
 ### Steps in the Process:
 #### 1.	Data Connection and Preparation:
-* Loaded the CSV dataset into Tableau.
+* Loaded the CSV dataset from Google Sheets into Tableau.
 * Reviewed the dataset structure, identifying it as time series data with financial metrics and client categorizations.
 #### 2.	Creation of KPIs:
 * Developed four key performance indicators (KPIs) to provide an overview of the company’s financial health.
