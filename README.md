@@ -13,10 +13,10 @@ The Sipp Beverages Financial Analysis Dashboard offers a comprehensive look at t
 
 At the top of the dashboard, four key performance indicators (KPIs) are prominently displayed:
 
-* Total Revenue: The total amount of money earned from sales before any deductions.
-* Average Discount %: The average discount provided to clients during purchases.
-* Average Distribution Cost %: The relative cost associated with delivering products to clients.
-* COGS % of Gross Sales: The percentage of revenue spent on producing the goods sold.
+* **Total Revenue:** The total amount of money earned from sales before any deductions.
+* **Average Discount %:** The average discount provided to clients during purchases.
+* **Average Distribution Cost %:** The relative cost associated with delivering products to clients.
+* **COGS % of Gross Sales:** The percentage of revenue spent on producing the goods sold.
 
 One of the standout features of this dashboard is the interactive filters, which transform static reports into dynamic, actionable insights. The time filter, for instance, allows users to explore data across different periods—whether by month, quarter, or year—enabling a thorough analysis of the company’s progress. Additionally, a brand filter provides the ability to drill down into the performance of individual brands within the Sipp Beverages portfolio, delivering critical insights into brand-specific growth and profitability.
 
@@ -81,7 +81,7 @@ This chart categorizes purchase volumes by client type, including Big-box, Disco
 This metric is calculated by summing all values in the Gross Sales field.
 
 1.	Go to Analysis and select Create Calculated Field.
-2.	Enter `Total Revenue` as the name of the calculated field and input the formula: 
+2.	Enter **Total Revenue** as the name of the calculated field and input the formula: 
     SUM([Gross Sales]). Click OK.
 3.	Double-click the new measure ‘Total Revenue’.
 4.	Right-click on the measure in the Rows shelf and select Discrete to convert it from Continuous to Discrete.
@@ -91,7 +91,7 @@ This metric is calculated by summing all values in the Gross Sales field.
 This value is calculated by dividing the total discounts by the sum of gross sales.
 
 1.	Go to Analysis and select Create Calculated Field.
-2.	Enter `Average Discount %` as the name of the calculated field and input the formula:
+2.	Enter **Average Discount %** as the name of the calculated field and input the formula:
     SUM([Discount]) / SUM(-[Gross Sales]). Click OK.
     *Note: The minus sign is used because the Discount variable is represented with negative values in the data.*
 4.	Double-click the new measure ‘Average Discount %’.
@@ -102,7 +102,7 @@ This value is calculated by dividing the total discounts by the sum of gross sal
 This KPI is computed by dividing the sum of Distribution by the sum of Net Sales.
 
 1.	Go to Analysis and select Create Calculated Field.
-2.	Enter `Average Distribution Cost %` as the name of the calculated field and input the formula:
+2.	Enter **Average Distribution Cost %** as the name of the calculated field and input the formula:
     SUM([Distribution]) / SUM(-[Net Sales]). Click OK. 
     *Note: The minus sign is used because the Net Sales variable is represented with negative values in the data.*
 4.	Double-click the new measure ‘Average Distribution Cost %’.
@@ -112,7 +112,7 @@ This KPI is computed by dividing the sum of Distribution by the sum of Net Sales
 This metric is calculated by dividing the sum of COGS by the sum of Gross Sales.
 
 1.	Go to Analysis and select Create Calculated Field.
-2.	Enter `COGS % of Gross Sales` as the name of the calculated field and input the formula:
+2.	Enter **COGS % of Gross Sales** as the name of the calculated field and input the formula:
     SUM([Cost of Goods Sold]) / SUM(-[Gross Sales]). Click OK. 
     *Note: The minus sign is used because the Cost of Goods Sold variable is represented with negative values in the data.*
 4.	Double-click the new measure ‘COGS % of Gross Sales’.
@@ -144,22 +144,24 @@ For example, if a report on the company’s performance over the last 12 months 
 
 * **Yearly Performance Review:** Adjust the start and end dates to generate a report on the company’s performance over the last 12 months.
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/0b046e4d-4f0c-4259-88a3-f3c855198550" width="700">
+  <img src="https://github.com/user-attachments/assets/0b046e4d-4f0c-4259-88a3-f3c855198550" width="800">
 </p>
 <p align="center">
   <em>Dashboard showing performance from Jan-Dec 2020</em><br>
 </p>
 
 
+
 Alternatively, the data can be filtered to analyze specific quarters, such as Q1-2020, to assess whether sales targets were met.
 
 * **Quarterly Analysis:** Narrow the time frame to a specific quarter, such as Q1-2020, to determine if sales quotas were met.
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/08b5cbef-09bf-46f9-8ecd-dc46365cde9d" width="700">
+  <img src="https://github.com/user-attachments/assets/08b5cbef-09bf-46f9-8ecd-dc46365cde9d" width="800">
 </p>
 <p align="center">
   <em>Dashboard displaying performance in Q1-2020</em><br>
 </p>
+
 
 
 Moreover, the brand filter can be used to monitor newly created brands, ensuring that their integration into the company portfolio is on track. The ability to zoom in on specific aspects of the company’s performance ensures that management can make data-driven decisions, adapt strategies, and refine business goals over time.
