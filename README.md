@@ -11,42 +11,137 @@
 ## Project Overview
 The Sipp Beverages Financial Analysis Dashboard offers a comprehensive look at the performance of Sipp Beverages, a fictitious company operating in the Fast Moving Consumer Goods (FMCG) industry. This dashboard is designed to provide actionable insights into key financial metrics, enabling data-driven decision-making. Key features include visualizations of monthly net sales and gross profit, purchase volume by bottle size, and client type. The dashboard also incorporates interactive filters for dynamic analysis across different time periods and brands. Click on [Financial Analysis Dashboard](https://public.tableau.com/app/profile/justice.paintsil/viz/FinancialDashboard-SippBeveragesLtd_/SippReport#1) to interact with the dashboard on Tableau Public.
 
-## Key Features
-* **KPIs:** Four critical metrics are displayed prominently at the top of the dashboard. These include Total Revenue, Average Discount %, Average Distribution Cost %, and COGS % of Gross Sales.
-* **Interactive Filters:** Users can filter data by time period and brand, allowing for focused analysis on specific metrics. These filters are integral for tracking the company’s progress and adapting strategies in real-time.
-* **Visualizations:** A combination chart displays monthly net sales and gross profit margin, while horizontal bar charts break down purchase volume by bottle size and client type.
+At the top of the dashboard, four key performance indicators (KPIs) are prominently displayed:
+
+* Total Revenue: The total amount of money earned from sales before any deductions.
+* Average Discount %: The average discount provided to clients during purchases.
+* Average Distribution Cost %: The relative cost associated with delivering products to clients.
+* COGS % of Gross Sales: The percentage of revenue spent on producing the goods sold.
+
+One of the standout features of this dashboard is the interactive filters, which transform static reports into dynamic, actionable insights. The time filter, for instance, allows users to explore data across different periods—whether by month, quarter, or year—enabling a thorough analysis of the company’s progress. Additionally, a brand filter provides the ability to drill down into the performance of individual brands within the Sipp Beverages portfolio, delivering critical insights into brand-specific growth and profitability.
 
 ## Building the Dashboard
-The data for this project comes from a CSV file containing financial information typically extracted from ERP systems like SAP or Oracle. The dataset includes time series data, client details, and financials such as Volume, Gross Sales, Discounts, Net Sales, COGS, Distribution, and Warehousing costs.
+The data for this dashboard was sourced from a CSV file containing financial information, typically extracted from an ERP system like SAP or Oracle. After loading the dataset into Tableau, I analyzed its structure and identified it as time series data, complete with details about Sipp Beverages’ clients and categorization by client type. The dataset also included essential financial metrics such as Volume, Gross Sales, Discounts, Net Sales, Cost of Goods Sold (COGS), Distribution, and Warehousing.
 
-The dashboard was built using Tableau, with each chart and KPI created in separate worksheets before being integrated into a unified dashboard. Interactive filters were added to enhance the analytical capabilities of the dashboard.
+Each element of the dashboard—charts and KPIs—was created on separate worksheets in Tableau. Once all the components were built, I brought them together in the final dashboard, where I added filters to make the dashboard dynamic and interactive. The key worksheets created were Net Sales and GP %, Volume by Size, and Volume by Client Type, in addition to the four KPI worksheets mentioned earlier. The final dashboard was aptly named "Sipp Report."
 
-### Steps in the Process:
-#### 1.	Data Connection and Preparation:
-* Loaded the CSV dataset from Google Sheets into Tableau.
-* Reviewed the dataset structure, identifying it as time series data with financial metrics and client categorizations.
-#### 2.	Creation of KPIs:
-* Developed four key performance indicators (KPIs) to provide an overview of the company’s financial health.
-#### 3.	Chart Development:
-* **Net Sales and GP % (Combo Chart):** This chart combines a bar chart of monthly net sales with a line chart of gross profit margins, offering insights into both revenue growth and profitability.
-* **Volume by Size (Horizontal Bar Chart):** Displays the volume of purchases by bottle size, facilitating comparison between different product packages.
-* **Volume by Client Type (Horizontal Bar Chart):** Highlights purchase volumes across client types such as Big-box, Discounters, Grocery, and Supermarkets.
-#### 4.	Dashboard Integration:
-* Integrated the KPIs and charts into a cohesive dashboard.
-* Applied a custom color palette to match Sipp Beverages' corporate branding.
-#### 5.	Interactive Filters:
-* **Brand Filter:** Allows for analysis at the brand level, providing insights into individual brand performance.
-* **Date Filter:** Facilitates time-based analysis, enabling users to examine trends over specific periods, such as months, quarters, or years.
+### Visualizations
 
-## How to Interpret the Dashboard
-The dashboard serves as a powerful tool for tracking different aspects of Sipp Beverages’ performance. The combination of KPIs and charts provides a holistic view of the company’s financial health, allowing users to:
-* Monitor net sales and gross profit margins over time to assess sustainable growth.
-* Analyze purchase volumes by product size and client type to identify market trends.
-* Use time filters to compare performance across different periods, such as quarters or years.
-* Drill down into brand-specific data to evaluate the success of individual brands within the portfolio.
+#### Custom Color Palette
+Before constructing the charts, I created a custom color palette, named ‘Violet Blu Peach,’ to align with Sipp Beverages’ corporate branding. This involved modifying the ‘Preferences.tps’ file in My Tableau Repository by inserting the appropriate hex color codes using a text editor. The custom palette then became available within Tableau for all visual elements.
 
-## Use Case Scenarios
-This dashboard is ideal for management teams looking to make data-driven decisions. For instance:
+#### Net Sales and GP % (Combination Chart)
+This combination chart features a bar chart for monthly net sales alongside a line chart for gross profit margins. The net sales data indicates the pace of business growth, while the gross profit margin provides insights into profitability. Although both charts share the same time axis, each has a distinct y-axis to represent different scales—net sales in currency and gross profit as a percentage. Below are the technical steps to create the [Net Sales and GP % combo chart (click to view chart)](KPIs and Charts Worksheets/Net Sales and GP % Worksheet.png):
+
+* Drag Year and Month from the Dimensions panel to the Columns shelf.
+* Drag Net Sales from the Measures panel to the Rows shelf.
+* Right-click on both Year and Month and select Discrete to convert them into discrete fields.
+* Click on Analysis and select Create Calculated Field.
+* Name the field GP % and enter the formula: 
+  SUM([Net Sales] + [Cost of Goods Sold]) / SUM([Net Sales]). Click OK.
+  *Note: The formula sums Net Sales and Cost of Goods Sold since COGS is represented as a negative value in the dataset.* [Click to see the image of the formula in Tableau](Dashboard Images/GP % Calculation.png).
+* Drag GP % from the Measures panel to the Rows shelf. This creates a second bar chart.
+* Click on the GP % chart under the Marks card and change the mark type to Line from the drop-down menu.
+* Right-click on the y-axis of the GP % chart and select Dual Axis to overlay the charts.
+* If the bars change to dots, click on SUM(Net Sales) under the Marks card and set the mark type back to Bar.
+* Right-click on the secondary y-axis (for GP %) and select Format.
+* Under the Numbers drop-down, choose Percentage and set the Decimal Places to 2. Align the text to the center.
+* Double-click the chart title and rename it to Net Sales and GP %. Format the title in bold.
+* Click on Color under the Marks card for the GP % line and select the second markers option to make the data points stand out.
+* While still under Color, click Edit Colors.
+* Select Violet Blu Peach from the drop-down list under Select Color Palette.
+* Assign the dark purple color to GP % and a blue color to Net Sales. Click Apply and then OK to confirm.
+
+#### Volume by Size (Horizontal Bar Chart)
+This chart visualizes the purchase volumes across different package sizes for Sipp Beverages’ products, making it easy to compare the performance of various sizes. Follow the steps below to create the [Volume by Size horizontal bar chart (click to view chart)](KPIs and Charts Worksheets/Volume by Size Worksheet.png):
+
+* Setup Axes: Drag Volume from the Measures panel to the Columns shelf.
+* Drag Size from the Dimensions panel to the Rows shelf.
+* Adjust the order of the bars to reflect the bottle sizes by simply dragging and dropping them into the desired sequence.
+* Double-click the chart title and rename it to Volume by Size. Format the title as bold for emphasis.
+* To color each bar uniquely, right-click on a bar and select Group. Repeat this for all bars to create separate groups.
+* Assign different shades of blue and purple to the grouped bars to visually distinguish the volume sizes, following the approach from the previous steps.
+* Drag Gross Sales from Measures onto Label. Right-click on any of the data labels and choose Format. Click the drop-down arrow beside Numbers, select Currency, and choose Million.
+
+#### Volume by Client Type (Horizontal Bar Chart)
+This chart categorizes purchase volumes by client type, including Big-box, Discounters, Grocery, and Supermarkets, offering a clear view of client distribution patterns. To create the [Volume by Client Type horizontal bar chart (click to view chart)](KPIs and Charts Worksheets/Volume by Client Type Worksheet.png) follow the steps below:
+
+* Drag Volume from the Measures panel to the Columns shelf.
+* Drag Client Type from the Dimensions panel to the Rows shelf.
+* Double-click the chart title and rename it to Volume by Client Type. Make the title bold for emphasis.
+* Right-click on each bar and select Group to organize them by client type.
+* Use different shades of blue and purple to color the grouped bars, similar to the method used in the previous step, to visually distinguish the client types.
+* Drag Gross Sales from Measures onto Label. Right-click on any of the data labels and choose Format. Click the drop-down arrow beside Numbers, select Currency, and choose Million.
+
+### Key Performance Indicators (KPIs)
+
+#### Steps to Calculate and Format KPIs:
+
+##### Total Revenue
+This metric is calculated by summing all values in the Gross Sales field.
+
+1.	Go to Analysis and select Create Calculated Field.
+2.	Enter `Total Revenue` as the name of the calculated field and input the formula: 
+    SUM([Gross Sales]). Click OK.
+3.	Double-click the new measure ‘Total Revenue’.
+4.	Right-click on the measure in the Rows shelf and select Discrete to convert it from Continuous to Discrete.
+5.	Right-click on the number in the table and choose Format. Click the drop-down arrow beside Numbers, select Currency, and choose Million. Retain the default Decimal Places of 2. Align the number and text to the center and make the text bold.
+
+##### Average Discount %
+This value is calculated by dividing the total discounts by the sum of gross sales.
+
+1.	Go to Analysis and select Create Calculated Field.
+2.	Enter `Average Discount %` as the name of the calculated field and input the formula:
+    SUM([Discount]) / SUM(-[Gross Sales]). Click OK.
+    *Note: The minus sign is used because the Discount variable is represented with negative values in the data.*
+4.	Double-click the new measure ‘Average Discount %’.
+5.	Right-click on the measure in the Rows shelf and select Discrete to convert it from Continuous to Discrete.
+6.	Right-click on the number in the table and choose Format. Click the drop-down arrow beside Numbers and select Percentage. Retain the default Decimal Places of 2. Align the number and text to the center and make the text bold.
+
+##### Average Distribution Cost % 
+This KPI is computed by dividing the sum of Distribution by the sum of Net Sales.
+
+1.	Go to Analysis and select Create Calculated Field.
+2.	Enter `Average Distribution Cost %` as the name of the calculated field and input the formula:
+    SUM([Distribution]) / SUM(-[Net Sales]). Click OK. 
+    *Note: The minus sign is used because the Net Sales variable is represented with negative values in the data.*
+4.	Double-click the new measure ‘Average Distribution Cost %’.
+5.	Follow steps 4 and 5 as outlined above to format the value and text.
+
+##### COGS % of Gross Sales
+This metric is calculated by dividing the sum of COGS by the sum of Gross Sales.
+
+1.	Go to Analysis and select Create Calculated Field.
+2.	Enter `COGS % of Gross Sales` as the name of the calculated field and input the formula:
+    SUM([Cost of Goods Sold]) / SUM(-[Gross Sales]). Click OK. 
+    *Note: The minus sign is used because the Cost of Goods Sold variable is represented with negative values in the data.*
+4.	Double-click the new measure ‘COGS % of Gross Sales’.
+5.	Follow steps 4 and 5 as outlined above to format the value and text.
+
+## Dashboard Design
+To create the dashboard, I set the dimensions to a minimum of 1080x720 pixels and a maximum of 1400x1000 pixels. I used the Tiled layout to organize and position the various elements neatly. The KPIs were placed at the top of the dashboard, followed by the combination chart (Net Sales and GP %) and the two bar charts (Volume by Size and Volume by Client Type) below. The company logo was added to the top left corner, with the dashboard title prominently displayed next to it.
+
+#### Interactive Filters
+Filters are critical to making this dashboard truly interactive. I added two main filters:
+
+* **Brand Filter:** This filter allows users to isolate and examine data related to specific brands within Sipp Beverages. It is essential for understanding individual brand performance and identifying growth opportunities or underperforming areas.
+* **Date Filter:** To enable time-based analysis, I created a [Start Date](Parameters (Start and End Dates)/Start Date Parameter.png) and [End Date](Parameters (Start and End Dates)/End Date Parameter.png) parameters. These parameters allow users to adjust the time frame for the data, making it possible to review performance over any chosen period, whether monthly, quarterly, or yearly.
+
+Both filters were customized for ease of use. The Brand filter was connected to all worksheets, and I ensured that the Date filter was set up to work across the entire dashboard. This seamless integration of filters ensures that users can dynamically explore the data and gain insights tailored to their specific needs.
+
+## Dashboard Review and Interpretation
+The dashboard offers a multifaceted view of Sipp Beverages’ financial data. Users can track net sales and gross profit margins to assess overall business growth and profitability. Additionally, the breakdown of sales by client type and product size provides valuable insights into market trends and client preferences.
+
+With the time filter, users can review the company’s performance over various periods, be it monthly, quarterly, or annually. The brand filter further enhances the dashboard’s utility by allowing a focused analysis of individual brands, which is crucial for making informed strategic decisions.
+
+By adjusting these filters, users can address key business questions such as:
+
+* Which brands are performing well?
+* Are any brands underperforming or losing money?
+* How do sales trends vary across different periods?
+
+For example, if a report on the company’s performance over the last 12 months is needed, users can simply adjust the start and end dates to view the relevant data. 
+
 * **Yearly Performance Review:** Adjust the start and end dates to generate a report on the company’s performance over the last 12 months.
 <p align="center">
   <img src="https://github.com/user-attachments/assets/0b046e4d-4f0c-4259-88a3-f3c855198550" width="700">
@@ -55,6 +150,8 @@ This dashboard is ideal for management teams looking to make data-driven decisio
   <em>Dashboard showing performance from Jan-Dec 2020</em><br>
 </p>
 
+
+Alternatively, the data can be filtered to analyze specific quarters, such as Q1-2020, to assess whether sales targets were met.
 
 * **Quarterly Analysis:** Narrow the time frame to a specific quarter, such as Q1-2020, to determine if sales quotas were met.
 <p align="center">
@@ -65,21 +162,7 @@ This dashboard is ideal for management teams looking to make data-driven decisio
 </p>
 
 
-* **Brand-Specific Insights:** Use the brand filter to focus on a specific brand or group, and track its development.
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/841ba270-6406-4de9-8a47-2489ba776a62" width="700">
-</p>
-<p align="center">
-  <em>Dashboard depicting performance of Evan brands from Jan-Jun 2020</em><br>
-</p>
-
+Moreover, the brand filter can be used to monitor newly created brands, ensuring that their integration into the company portfolio is on track. The ability to zoom in on specific aspects of the company’s performance ensures that management can make data-driven decisions, adapt strategies, and refine business goals over time.
 
 ## Conclusion
-The Sipp Beverages Financial Analysis Dashboard is designed to provide clear, actionable insights into the company’s financial performance. Its interactive features and visual clarity make it a valuable tool for driving strategic decisions. As business goals evolve, this dashboard can be easily adapted to meet new needs, ensuring that Sipp Beverages remains competitive in the fast-paced FMCG industry.
-
-
-***For a detailed description of the end-to-end process, please refer to the [PROCESS.md](./PROCESS.md) file.***
-
-
-
-
+The Sipp Beverages [Financial Analysis Dashboard](https://public.tableau.com/app/profile/justice.paintsil/viz/FinancialDashboard-SippBeveragesLtd_/SippReport#1) is designed to provide clear, actionable insights into the company’s financial performance. By combining KPIs, dynamic visualizations, and interactive filters, this dashboard not only highlights key metrics but also supports strategic decision-making at both the brand and company levels. As business goals evolve, this dashboard can be adapted to reflect new priorities, ensuring it remains a valuable asset for ongoing financial analysis.
