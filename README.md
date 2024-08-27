@@ -38,8 +38,8 @@ This combination chart features a bar chart for monthly net sales alongside a li
 * Right-click on both Year and Month and select Discrete to convert them into discrete fields.
 * Click on Analysis and select Create Calculated Field.
 * Name the field GP % and enter the formula: 
-  `SUM([Net Sales] + [Cost of Goods Sold]) / SUM([Net Sales])`. Click OK.
-  *Note: The formula sums Net Sales and Cost of Goods Sold since COGS is represented as a negative value in the dataset.* [Click to see the image of the formula in Tableau](Dashboard%20Images/GP%20%%20Calculation.png).
+  * `SUM([Net Sales] + [Cost of Goods Sold]) / SUM([Net Sales])`. Click OK.
+  * *Note: The formula sums Net Sales and Cost of Goods Sold since COGS is represented as a negative value in the dataset.* [Click to see the image of the formula in Tableau](Dashboard%20Images/GP%20%%20Calculation.png).
 * Drag GP % from the Measures panel to the Rows shelf. This creates a second bar chart.
 * Click on the GP % chart under the Marks card and change the mark type to Line from the drop-down menu.
 * Right-click on the y-axis of the GP % chart and select Dual Axis to overlay the charts.
