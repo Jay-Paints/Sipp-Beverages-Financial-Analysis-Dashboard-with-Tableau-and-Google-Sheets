@@ -31,7 +31,7 @@ Each element of the dashboard—charts and KPIs—was created on separate worksh
 Before constructing the charts, I created a custom color palette, named ‘Violet Blu Peach,’ to align with Sipp Beverages’ corporate branding. This involved modifying the ‘Preferences.tps’ file in My Tableau Repository by inserting the appropriate hex color codes using a text editor. The custom palette then became available within Tableau for all visual elements.
 
 #### Net Sales and GP % (Combination Chart)
-This combination chart features a bar chart for monthly net sales alongside a line chart for gross profit margins. The net sales data indicates the pace of business growth, while the gross profit margin provides insights into profitability. Although both charts share the same time axis, each has a distinct y-axis to represent different scales—net sales in currency and gross profit as a percentage. Below are the technical steps to create the [Net Sales and GP % combo chart (click to view chart)](KPIs%20and%20Charts%20Worksheets/Net%20Sales%20and%20GP%20%%20Worksheet.png):
+This combination chart features a bar chart for monthly net sales alongside a line chart for gross profit margins. The net sales data indicates the pace of business growth, while the gross profit margin provides insights into profitability. Although both charts share the same time axis, each has a distinct y-axis to represent different scales—net sales in currency and gross profit as a percentage. Below are the technical steps to create the [Net Sales and GP % combo chart](KPIs%20and%20Charts%20Worksheets/Net%20Sales%20and%20GP%20%%20Worksheet.png):
 
 * Drag Year and Month from the Dimensions panel to the Columns shelf.
 * Drag Net Sales from the Measures panel to the Rows shelf.
@@ -53,7 +53,7 @@ This combination chart features a bar chart for monthly net sales alongside a li
 * Assign the dark purple color to GP % and a blue color to Net Sales. Click Apply and then OK to confirm.
 
 #### Volume by Size (Horizontal Bar Chart)
-This chart visualizes the purchase volumes across different package sizes for Sipp Beverages’ products, making it easy to compare the performance of various sizes. Follow the steps below to create the [Volume by Size horizontal bar chart (click to view chart)](KPIs%20and%20Charts%20Worksheets/Volume%20by%20Size%20Worksheet.png):
+This chart visualizes the purchase volumes across different package sizes for Sipp Beverages’ products, making it easy to compare the performance of various sizes. Follow the steps below to create the [Volume by Size horizontal bar chart](KPIs%20and%20Charts%20Worksheets/Volume%20by%20Size%20Worksheet.png):
 
 * Setup Axes: Drag Volume from the Measures panel to the Columns shelf.
 * Drag Size from the Dimensions panel to the Rows shelf.
@@ -64,7 +64,7 @@ This chart visualizes the purchase volumes across different package sizes for Si
 * Drag Gross Sales from Measures onto Label. Right-click on any of the data labels and choose Format. Click the drop-down arrow beside Numbers, select Currency, and choose Million.
 
 #### Volume by Client Type (Horizontal Bar Chart)
-This chart categorizes purchase volumes by client type, including Big-box, Discounters, Grocery, and Supermarkets, offering a clear view of client distribution patterns. To create the [Volume by Client Type horizontal bar chart (click to view chart)](KPIs%20and%20Charts%20Worksheets/Volume%20by%20Client%20Type%20Worksheet.png) follow the steps below:
+This chart categorizes purchase volumes by client type, including Big-box, Discounters, Grocery, and Supermarkets, offering a clear view of client distribution patterns. To create the [Volume by Client Type horizontal bar chart](KPIs%20and%20Charts%20Worksheets/Volume%20by%20Client%20Type%20Worksheet.png) follow the steps below:
 
 * Drag Volume from the Measures panel to the Columns shelf.
 * Drag Client Type from the Dimensions panel to the Rows shelf.
