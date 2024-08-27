@@ -31,7 +31,7 @@ Each element of the dashboard—charts and KPIs—was created on separate worksh
 Before constructing the charts, I created a custom color palette, named ‘Violet Blu Peach,’ to align with Sipp Beverages’ corporate branding. This involved modifying the ‘Preferences.tps’ file in My Tableau Repository by inserting the appropriate hex color codes using a text editor. The custom palette then became available within Tableau for all visual elements.
 
 #### Net Sales and GP % (Combination Chart)
-This combination chart features a bar chart for monthly net sales alongside a line chart for gross profit margins. The net sales data indicates the pace of business growth, while the gross profit margin provides insights into profitability. Although both charts share the same time axis, each has a distinct y-axis to represent different scales—net sales in currency and gross profit as a percentage. Below are the technical steps to create the [Net Sales and GP % combo chart](KPIs%20and%20Charts%20Worksheets/Net%20Sales%20and%20GP%20%20Worksheet.png):
+This combination chart features a bar chart for monthly net sales alongside a line chart for gross profit margins. The net sales data indicates the pace of business growth, while the gross profit margin provides insights into profitability. Although both charts share the same time axis, each has a distinct y-axis to represent different scales—net sales in currency and gross profit as a percentage. Below are the technical steps to create the [Net Sales and GP % combo chart](KPIs%20and%20Charts%20Worksheets/Net%20Sales%20and%20GP%20Worksheet.png):
 
 * Drag Year and Month from the Dimensions panel to the Columns shelf.
 * Drag Net Sales from the Measures panel to the Rows shelf.
@@ -39,7 +39,7 @@ This combination chart features a bar chart for monthly net sales alongside a li
 * Click on Analysis and select Create Calculated Field.
 * Name the field GP % and enter the formula: 
   * `SUM([Net Sales] + [Cost of Goods Sold]) / SUM([Net Sales])`. Click OK.
-  * *Note: The formula sums Net Sales and Cost of Goods Sold since COGS is represented as a negative value in the dataset.* [Click to see the image of the formula in Tableau](Dashboard%20Images/GP%20%20Calculation.png).
+  * *Note: The formula sums Net Sales and Cost of Goods Sold since COGS is represented as a negative value in the dataset.* [Click to see the image of the formula in Tableau](Dashboard%20Images/GP%20Calculation.png).
 * Drag GP % from the Measures panel to the Rows shelf. This creates a second bar chart.
 * Click on the GP % chart under the Marks card and change the mark type to Line from the drop-down menu.
 * Right-click on the y-axis of the GP % chart and select Dual Axis to overlay the charts.
