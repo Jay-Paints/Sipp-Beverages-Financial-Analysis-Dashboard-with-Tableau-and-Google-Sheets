@@ -82,7 +82,7 @@ This metric is calculated by summing all values in the Gross Sales field.
 
 1.	Go to Analysis and select Create Calculated Field.
 2.	Enter **Total Revenue** as the name of the calculated field and input the formula:
-    `SUM([Gross Sales])`. Click OK.
+    * `SUM([Gross Sales])`. Click OK.
 4.	Double-click the new measure ‘Total Revenue’.
 5.	Right-click on the measure in the Rows shelf and select Discrete to convert it from Continuous to Discrete.
 6.	Right-click on the number in the table and choose Format. Click the drop-down arrow beside Numbers, select Currency, and choose Million. Retain the default Decimal Places of 2. Align the number and text to the center and make the text bold.
@@ -92,8 +92,8 @@ This value is calculated by dividing the total discounts by the sum of gross sal
 
 1.	Go to Analysis and select Create Calculated Field.
 2.	Enter **Average Discount %** as the name of the calculated field and input the formula:
-    `SUM([Discount]) / SUM(-[Gross Sales])`. Click OK.
-  	*Note: The minus sign is used because the Discount variable is represented with negative values in the data.*
+    * `SUM([Discount]) / SUM(-[Gross Sales])`. Click OK.
+  	* *Note: The minus sign is used because the Discount variable is represented with negative values in the data.*
 4.	Double-click the new measure **Average Discount %**.
 5.	Right-click on the measure in the Rows shelf and select Discrete to convert it from Continuous to Discrete.
 6.	Right-click on the number in the table and choose Format. Click the drop-down arrow beside Numbers and select Percentage. Retain the default Decimal Places of 2. Align the number and text to the center and make the text bold.
@@ -103,8 +103,8 @@ This KPI is computed by dividing the sum of Distribution by the sum of Net Sales
 
 1.	Go to Analysis and select Create Calculated Field.
 2.	Enter **Average Distribution Cost %** as the name of the calculated field and input the formula:
-    `SUM([Distribution]) / SUM(-[Net Sales])`. Click OK.
-  	*Note: The minus sign is used because the Net Sales variable is represented with negative values in the data.*
+    * `SUM([Distribution]) / SUM(-[Net Sales])`. Click OK.
+  	* *Note: The minus sign is used because the Net Sales variable is represented with negative values in the data.*
 4.	Double-click the new measure **Average Distribution Cost %**.
 5.	Follow steps 4 and 5 as outlined above to format the value and text.
 
@@ -113,8 +113,8 @@ This metric is calculated by dividing the sum of COGS by the sum of Gross Sales.
 
 1.	Go to Analysis and select Create Calculated Field.
 2.	Enter **COGS % of Gross Sales** as the name of the calculated field and input the formula:
-    `SUM([Cost of Goods Sold]) / SUM(-[Gross Sales])`. Click OK.
-  	*Note: The minus sign is used because the Cost of Goods Sold variable is represented with negative values in the data.*
+    * `SUM([Cost of Goods Sold]) / SUM(-[Gross Sales])`. Click OK.
+  	* *Note: The minus sign is used because the Cost of Goods Sold variable is represented with negative values in the data.*
 4.	Double-click the new measure **COGS % of Gross Sales**.
 5.	Follow steps 4 and 5 as outlined above to format the value and text.
 
